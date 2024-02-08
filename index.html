@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Augoor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="css/css.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+  <div class="container-fluid h-100">
+    <div class="row ">
+      <div class="brand"></div>
+      <div class="header">
+        <h1>File explorer</h1>
+      </div>
+    </div>
+    <div class="row  h-100">
+      <div class=" nav"></div>
+      <div class="list "></div>
+      <div class="file">
+
+        <div class="row sub-nav">
+          <div class="sub-nav-1 "></div>
+          <div class="sub-nav-2 "></div>
+        </div>
+        <div class="row code">
+
+
+          <span class="code3"></span> <!-- BLANCO-->
+          <span class="code2"></span> <!-- ROJO-->
+          <span class="code1"></span> <!-- AZUL-->
+
+            <ul id="codeList">
+              <li class="codeItem esta"><div class="line-number">1</div><div class="code-snippet"><span class="code1">01 </span> <span class="code3">min-val</span> <span class="code2">pic 9v99 value</span> <span class="code1">>0.01.</span></div></li>
+              <li class="codeItem esta"><div class="line-number">2</div><div class="code-snippet"><span class="code1">01</span> <span class="code3">max-val</span>  <span class="code2">pic 9(6)v99 value</span> <span class="code1">999999.99.</span</div></li>
+              <li class="codeItem esta"><div class="line-number">3</div><div class="code-snippet"><span class="code1">01</span> <span class="code3">not-numeric </span>       <span class="code2">pic x(16) value</span> <span class="code1">" is NOT numeric.".</span></div></li>
+              <li class="codeItem esta"><div class="line-number">4</div><div class="code-snippet"><span class="code1">01</span> <span class="code3">quantity-too-small</span> <span class="code2">pic x(22)</span></div></li>
+              <li class="codeItem esta"><div class="line-number">5</div><div class="code-snippet"></div></li>
+              <li class="codeItem "><div class="line-number">6</div><div class="code-snippet"><span class="code2">display</span> <span class="code3">"Enter zero for any parameter to end the program."</span></div></li>
+              <li class="codeItem "><div class="line-number">7</div><div class="code-snippet"><span class="code2">display</span> <span class="code1">spaces</span></div></li>
+              <li class="codeItem "><div class="line-number">8</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">9</div><div class="code-snippet"><span class="code3">present-value-data-entry.</span></div></li>
+              <li class="codeItem "><div class="line-number">10</div><div class="code-snippet"><span class="code2">display</span> <span class="code1">"Enter initial investment: "</span> <span class="code2">with no advancing</span></div></li>
+              <li class="codeItem "><div class="line-number">11</div><div class="code-snippet"><span class="code2">accept</span> <span class="code3">principal-in</span></div></li>
+              <li class="codeItem "><div class="line-number">12</div><div class="code-snippet"> <span class="code2">display</span> <span class="code3">"Enter zero for any parameter to end the program."</span></div></li>
+              <li class="codeItem "><div class="line-number">13</div><div class="code-snippet"> <span class="code2">display</span> <span class="code1">spaces</span></div></li>
+              <li class="codeItem "><div class="line-number">14</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">15</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">16</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">17</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">18</div><div class="code-snippet"><span class="code2">def get_metrics(df):</span></div></li>
+              <li class="codeItem "><div class="line-number">19</div><div class="code-snippet">    <span class="code1">model =</span> <span class="code3">SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')</span></div></li>
+              <li class="codeItem "><div class="line-number">20</div><div class="code-snippet">    <span class="code1">X_test =</span> <span class="code3">model.encode(df.completion.tolist())</span></div></li>
+              <li class="codeItem "><div class="line-number">21</div><div class="code-snippet">    <span class="code1">X_pred =</span> <span class="code3">model.encode(df.prediction.tolist())</span></div></li>
+              <li class="codeItem "><div class="line-number">22</div><div class="code-snippet">    <span class="code1">X_test =</span> <span class="code3">normalize(X_test, axis=1)</span></div></li>
+              <li class="codeItem "><div class="line-number">23</div><div class="code-snippet">    <span class="code1">X_pred =</span> <span class="code3">normalize(X_pred, axis=1)</span></div></li>
+              <li class="codeItem "><div class="line-number">24</div><div class="code-snippet">    <span class="code3">_ = np.sqrt(-1)</span></div></li>
+              <li class="codeItem "><div class="line-number">25</div><div class="code-snippet">    <span class="code1">similarities =</span> <span class="code3">[np.dot(X_test[i], X_pred[i]) for i in range(0, X_test.shape[0])]</span></div></li>
+              <li class="codeItem "><div class="line-number">26</div><div class="code-snippet">    <span class="code1">conn =</span> <span class="code2">psycopg2.connect(</span></div></li>
+              <li class="codeItem "><div class="line-number">27</div><div class="code-snippet">        <span class="code1">host=</span> <span class="code2">"</span><span class="code3">localhost</span><span class="code2">"</span>,</div></li>
+              <li class="codeItem "><div class="line-number">28</div><div class="code-snippet">        <span class="code2">database="</span><span class="code3">suppliers</span><span class="code2">",</span></div></li>
+              <li class="codeItem "><div class="line-number">29</div><div class="code-snippet">        <span class="code3">user="postgres",</span></div></li>
+              <li class="codeItem "><div class="line-number">30</div><div class="code-snippet">        <span class="code3">password="Abcd1234")</span></div></li>
+              <li class="codeItem "><div class="line-number">31</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">32</div><div class="code-snippet">    bleu_metric = evaluate.load("bleu")</div></li>
+              <li class="codeItem "><div class="line-number">33</div><div class="code-snippet">    <span class="code2">bleu = bleu_metric.compute(predictions=df.prediction.tolist(), references=df.completion.tolist())</span></div></li>
+              <li class="codeItem "><div class="line-number">34</div><div class="code-snippet">    <span class="code3">process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE)</span></div></li>
+              <li class="codeItem "><div class="line-number">35</div><div class="code-snippet">    <span class="code3">rouge_metric = evaluate.load('rouge')</span></div></li>
+              <li class="codeItem "><div class="line-number">36</div><div class="code-snippet">    <span class="code3">rouge = rouge_metric.compute(predictions=df.prediction.tolist(), references=df.completion.tolist())</span></div></li>
+              <li class="codeItem "><div class="line-number">37</div><div class="code-snippet">    <span class="code3">return {"semantic": np.mean(similarities),</span></div></li>
+              <li class="codeItem "><div class="line-number">38</div><div class="code-snippet">            "bleu": bleu["bleu"],</div></li>
+              <li class="codeItem "><div class="line-number">39</div><div class="code-snippet">            <span class="code2">"rouge": rouge["rouge1"]}</span></div></li>
+              <li class="codeItem "><div class="line-number">40</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">41</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">42</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">43</div><div class="code-snippet"><span class="code2">if present-value < min-val</span></div></li>
+              <li class="codeItem "><div class="line-number">44</div><div class="code-snippet"><span class="code2">display quantity-too-small</div></li>
+              <li class="codeItem "><div class="line-number">45</div><div class="code-snippet"><span class="code2">display spaces</div></li>
+              <li class="codeItem "><div class="line-number">46</div><div class="code-snippet"> </div></li>
+              <li class="codeItem "><div class="line-number">47</div><div class="code-snippet"> </div></li>
+            </ul>
+  
+
+
+          <div class="popup-bg" onclick="closePopup()"></div>
+          <div class="popup" id="popup">
+            <ul>
+              <li onclick="optionSelected(1)" class="option1">Explain code</li>
+              <li onclick="optionSelected(2)" class="option2">Refactor code</li>
+              <li onclick="optionSelected(3)" class="option3">Identify code smells</li>
+            </ul>
+          </div>
+
+          <div id="mainAssistant">
+            
+            <div class="headerAssistant"><button id="closeAssistant">Cerrar</button></div>
+
+            <div class="helpContainer" ><img src="i/help.png" width="80%"/></div>
+
+            <div class="chatContainer" style="display: none;">
+              <p id="pasteText"></p>
+            </div>
+
+            <div class="chat">
+              <textarea rows="1" cols="50" id="chat" placeholder="Message (&quot;/&quot; for commands)"></textarea>
+              <button onclick="useText()" class="sendButton">Send</button>
+          </div>
+          </div>
+
+          <div id="assistant">
+            <img src="i/ai-icon.png" alt="Assistant" height="24px" width="23.58px">
+            <h1>Ask me</h1>
+          </div>
+            
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+<script>
+
+
+
+    // Creo el popup
+    function showPopup(event) {
+      const popup = document.getElementById('popup');
+      const selection = window.getSelection();
+      if (selection.rangeCount > 0) {
+        const range = selection.getRangeAt(0);
+        const rect = range.getBoundingClientRect();
+
+        // Lugar del popup
+        popup.style.position = 'absolute';
+        popup.style.left = `${rect.left + window.scrollX}px`;
+        popup.style.top = `${rect.bottom + window.scrollY}px`;
+        popup.style.display = 'block';
+        document.querySelector('.popup-bg').style.display = 'block';
+      }
+    }
+
+    // Cerrar popup
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+      document.querySelector('.popup-bg').style.display = 'none';
+    }
+
+    // Seleccion
+    document.addEventListener('DOMContentLoaded', function () {
+      var codeItems = document.querySelectorAll('.codeItem');
+      codeItems.forEach(function (item) {
+        item.addEventListener('mouseup', function (event) {
+
+          setTimeout(() => {
+            const selection = window.getSelection().toString();
+            if (selection.length > 0) {
+              showPopup(event);
+            }
+          }, 10);
+        });
+      });
+    });
+
+
+
+    // Manejo de opciones
+function optionSelected(option) {
+  const assistant = document.getElementById('mainAssistant');
+  var helpContainer = document.querySelector('.helpContainer');
+  var chatContainer = document.querySelector('.chatContainer');
+  var pasteText = document.getElementById('pasteText');
+
+
+
+  switch(option) {
+    case 1:
+      // Cambia el tamaño y muestra el div assistant
+      assistant.style.width = '400px';
+      assistant.style.height = '800px';
+      assistant.style.display = 'block';
+      mainAssistant.style.display = 'block';
+      closeAssistant.style.display = 'block';
+      pasteText.innerHTML += '<div class="thread"><img src="i/defaultQuestion.jpg" width="100%"/><div id="animatedText1"></div></div>';
+      helpContainer.style.display = 'none';
+      chatContainer.style.display = 'block';
+      
+      animateText1('animatedText1', "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", 0);
+      closePopup();
+      break;
+    case 2:
+      // Para opción 2
+      break;
+    case 3:
+      // Para opción 3
+      break;
+  }
+
+}
+
+function animateText1(containerId, text, index) {
+    var container = document.getElementById(containerId);
+    if (index < text.length) {
+        container.innerHTML += text.charAt(index);
+        setTimeout(function() {
+            animateText(containerId, text, index + 1);
+        }, 50); // Ajusta este valor según la velocidad deseada para la animación
+    }
+}
+
+
+
+// Menejo de asistente
+document.addEventListener('DOMContentLoaded', function() {
+    var assistant = document.getElementById('assistant');
+    var closeAssistant = document.getElementById('closeAssistant');
+    var mainAssistant = document.getElementById('mainAssistant');
+    var helpContainer = document.querySelector('.helpContainer');
+    var chatContainer = document.querySelector('.chatContainer');
+    var buttonSend = document.querySelector('.sendButton');
+
+    
+
+    function toggleAssistant() {
+        // Verifica si 'mainAssistant' está desplegado (visible)
+        if (mainAssistant.style.display === 'block') {
+            mainAssistant.style.display = 'none';
+            closeAssistant.style.display = 'none';
+            assistant.style.background = '#6929C4';
+
+
+        } else {
+          mainAssistant.style.display = 'block';
+            closeAssistant.style.display = 'block';
+            assistant.style.background = '#8A3FFC';
+
+
+        }
+
+
+
+
+    }
+    assistant.addEventListener('click', toggleAssistant);
+
+
+    function contractAssistant(event) {
+      mainAssistant.style.display = 'none';
+        closeAssistant.style.display = 'none';
+        event.stopPropagation(); 
+    }
+    closeAssistant.addEventListener('click', contractAssistant);
+
+
+    function toggleChatContent() {
+        if (helpContainer.style.display === 'block') {
+
+        } else {
+          helpContainer.style.display = 'none';
+          chatContainer.style.display = 'block';
+        }
+      }
+    buttonSend.addEventListener('click', toggleChatContent);
+
+
+});
+
+
+// Manejo del chat
+function useText() {
+  var text = document.getElementById('chat').value;
+
+  var paragraph = document.getElementById('pasteText');
+    paragraph.innerHTML += text + "<div class=&quot;thread&quot;></div>";
+
+  document.getElementById('chat').value = '';
+
+}
+
+
+function useText() {
+    var text = document.getElementById('chat').value;
+
+    var threadHTML = '<div class="thread"><img src="i/chatQuestion.jpg" width="390"/><br><p>' + text + '</p><br><img src="i/augoor.jpg" width="400"/><div id="animatedText"></div></div>';
+    var paragraph = document.getElementById('pasteText');
+    paragraph.innerHTML += threadHTML;
+
+    var loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.";
+    animateText('animatedText', loremIpsum, 0); 
+
+    document.getElementById('chat').value = '';
+}
+
+function animateText(containerId, text, index) {
+    var container = document.getElementById(containerId);
+    if (index < text.length) {
+        container.innerHTML += text.charAt(index); 
+        setTimeout(function() {
+            animateText(containerId, text, index + 1); 
+        }, 50);
+    }
+}
+
+
+
+
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

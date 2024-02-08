@@ -1,0 +1,375 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #0F1114;
+    color: #F4F4F5;
+    text-align: left;
+    overflow: hidden;
+}
+
+.lime {
+    border: 1px solid lime;
+}
+
+.brand,
+.header {
+    height: 56px;
+}
+
+.brand,
+.nav {
+    width: 3%;
+}
+
+.brand {
+    background-image: url(../i/brand.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.header {
+    background-image: url(../i/header.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    border-bottom: 1px solid #2C313F;
+}
+
+.header h1 {
+    font-size: 16px;
+}
+
+.nav {
+    background-image: url(../i/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.list {
+    width: 20%;
+    background-image: url(../i/list-files.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sub-nav {
+    height: 62px;
+    border-bottom: 1px solid #2C313F;
+    
+
+}
+
+.sub-nav-1 {
+    background-image: url(../i/sub-nav-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    height: 100%;
+    width: 50%;
+}
+
+.sub-nav-2 {
+    background-image: url(../i/sub-nav-2.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 100%;
+    width: 50%;
+
+}
+
+.file {
+    width: 76%;
+}
+
+.header {
+    width: 96%;
+    padding: 16px 24px 16px 24px;
+}
+
+#codeList {
+    width: 92%;
+}
+
+
+.esta .line-number{
+    width: 60px;
+    padding-left: 27px;
+}
+
+
+#codeList .codeItem .line-number {
+    list-style: none;
+    width: 96px;
+    padding-left: 27px;
+    padding-top: 1px;
+    padding-bottom: 2px;
+
+}
+
+
+#assistant {
+    background-color: #6929C4;
+    height: 40px;
+    width: 114px;
+    position: absolute;
+    margin: 24px;
+    right: 0;
+    bottom: 0;
+    border-radius: 107px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+#assistant:hover {
+    background-color: #8A3FFC;
+}
+
+#assistant h1 {
+    font-size: 14px;
+    display: block;
+    float: right;
+    padding-top: 6px;
+    padding-right: 10px;
+}
+
+
+.line-number {
+    user-select: none;
+}
+
+
+
+#codeList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.codeItem {
+    background-color: #0F1114;
+    font-family: monospace;
+}
+
+.line-number {
+    font-weight: bold;
+    color: #484E61;
+    user-select: none;
+    font-size: 12px;
+    background-color: #181A20;
+    border-right: 1px solid #2C313F;
+}
+
+.code-snippet {
+    color: #555;
+    font-size: 12px;
+        height: 21px;
+        padding-left: 103px;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    border: 1px solid #5B637B;
+    background-color:#2C313F;
+    padding: 12px;
+    z-index: 1000;
+    width: 230px;
+    min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.popup ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup li {
+    padding: 2px 5px 2px 32px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 0.4 rem;
+    font-weight: 400;
+    margin-top: 6px;
+    line-height: 24px;
+}
+
+.popup li:hover {
+    background-color: #5B637B;
+    border-radius: 4px;
+}
+
+.popup-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+}
+
+
+#closeAssistant {
+    padding: 12px 20px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    float: right;
+    width: 20px;
+    margin-right: 11px;
+
+  }
+
+
+#mainAssistant{
+    display: none;
+    background-color:#1C0F30;
+    border: 1px solid #6929C4;
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    right: 24px;
+    bottom: 70px;
+    border-radius: 8px;
+    padding: 0;
+}
+
+.line-number {
+    float: left;
+    clear: left;
+}
+
+#assistant img{
+    padding-top: 1px;
+}
+
+
+.code1 {
+    color: #78A9FF;
+}
+
+.code2 {
+    color: #FF8389;
+}
+
+
+.code3 {
+    color: #ffffff;
+}
+
+
+.headerAssistant {
+    background-image: url(../i/headerAssistant.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50px;
+    border-bottom: 1px solid #6929C4;
+    border-radius: 9px 9px 0px 0px;
+}
+
+.chatContainer {
+    height: 87%;
+    position: relative;
+    overflow: hidden;
+}
+
+#pasteText {
+    overflow: scroll;
+    position: absolute;
+    bottom: 0;
+}
+
+#chat {
+    background-color: #181A20;
+    border: 1px solid #5B637B;
+    border-radius: 4px;
+    color: #B8BCC6;
+    width: 352px;
+    height: 40px;
+    margin-left: 26px;
+    resize: none;
+    padding-top: 6px;
+    padding-left: 11px;
+}
+
+#chat:focus , #chat:focus-visible {
+    border-color: #3DDBD9;
+}
+
+#chat:focus , #chat:focus-visible {
+   outline: #3DDBD9;
+}
+
+.sendButton{
+    background-image: url(../i/send.png);
+    border: none;
+    color: transparent;
+    position: absolute;
+    right: 4px;
+    top: 7px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+
+.chat {
+    position: relative;
+}
+
+.option1{
+    background-image: url(../i/option1.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-y: center;
+    background-position-x: 6px;
+}
+
+.option2{
+    background-image: url(../i/option2.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-y: center;
+    background-position-x: 6px;
+}
+
+.option3{
+    background-image: url(../i/option3.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-position-y: center;
+    background-position-x: 6px;
+}
+
+.helpContainer {
+    text-align: center;
+    padding-top: 180px;
+    height: 86%;
+}
+
+
+.thread {
+    border-top: 1px solid #6929C4;
+    margin-top: 16px;
+}
+
+.thread p {
+    padding-left: 16px;
+}
+
+#animatedText1 , #animatedText{
+    padding: 0px 0px 0px 28px;
+    width: 384px;
+    font-size: 14px;
+}
