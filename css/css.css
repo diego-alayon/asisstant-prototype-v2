@@ -262,17 +262,34 @@ body {
 
 
 .code1 {
-    color: #78A9FF;
+    color: #1ab9fd;
 }
 
 .code2 {
-    color: #FF8389;
+    color: #00a800;
 }
 
 
 .code3 {
+    color: #ff7272;
+}
+
+.code4 {
     color: #ffffff;
 }
+
+.code5 {
+    color: #f3b21d;
+}
+
+.code6 {
+    color: #808080;
+}
+
+.code7 {
+    color: #d71ff3;
+}
+
 
 
 .headerAssistant {

@@ -32,45 +32,53 @@
         </div>
         <div class="row code">
           <ul id="codeList">
+
+            <span class="code1"></span> <!-- AZUL: Palabras claves -->
+            <span class="code2"></span> <!-- VERDE: Funciones y métodos -->
+            <span class="code3"></span> <!-- ROJO: Números y strings -->
+            <span class="code4"></span> <!-- BLANCO  -->
+            <span class="code5"></span> <!-- NEGRO: Variables y parametros -->
+            <span class="code6"></span> <!-- GRIS -->
+
               <li class="codeItem esta"><div class="line-number">1</div><div class="code-snippet"></li>
               <li class="codeItem esta"><div class="line-number">2</div><div class="code-snippet"></li>
               <li class="codeItem esta"><div class="line-number">3</div><div class="code-snippet"></div></li>
               <li class="codeItem esta"><div class="line-number">4</div><div class="code-snippet"></div></li>
               <li class="codeItem esta"><div class="line-number">5</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">6</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">7</div><div class="code-snippet">########################################################</div></li>
-              <li class="codeItem "><div class="line-number">8</div><div class="code-snippet">##################### EXAMPLE CODE #####################</div></li>
+              <li class="codeItem "><div class="line-number">7</div><div class="code-snippet"><span class="code6">########################################################</span></div></li>
+              <li class="codeItem "><div class="line-number">8</div><div class="code-snippet"><span class="code6">##################### EXAMPLE CODE #####################</span></div></li>
               <li class="codeItem "><div class="line-number">9</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">10</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">11</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">12</div><div class="code-snippet"><span class="code3">def sumar_numeros(lista_numeros):</span></div></li>
-              <li class="codeItem "><div class="line-number">13</div><div class="code-snippet"><span class="code3">resultado = 0</span></div></li>
-              <li class="codeItem "><div class="line-number">14</div><div class="code-snippet"><span class="code3">       for num in lista_numeros:</span></div></li>
+              <li class="codeItem "><div class="line-number">12</div><div class="code-snippet"><span class="code1">def</span> <span class="code3">sumar_numeros</span><span class="code4"> (lista_numeros):</span></div></li>
+              <li class="codeItem "><div class="line-number">13</div><div class="code-snippet"><span class="code4">resultado =</span> <span class="code7">0</span></span></div></li>
+              <li class="codeItem "><div class="line-number">14</div><div class="code-snippet"><span class="code3">&nbsp;&nbsp;&nbsp;<span class="code1">for</span>&nbsp;<span class="code4">num</span>&nbsp;<span class="code1">in</span><span class="code4"> lista_numeros:</span></div></li>
               <li class="codeItem "><div class="line-number">15</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">16</div><div class="code-snippet"><span class="code3">resultado = resultado + num</span></div></li>
-              <li class="codeItem "><div class="line-number">17</div><div class="code-snippet"><span class="code3">return resultado</span></div></li>
+              <li class="codeItem "><div class="line-number">16</div><div class="code-snippet"><span class="code4">&nbsp;&nbsp;&nbsp;&nbsp;resultado = resultado + num</span></div></li>
+              <li class="codeItem "><div class="line-number">17</div><div class="code-snippet"><span class="code3">&nbsp;&nbsp;<span class="code1">return</span> <span class="code4">resultado</span></div></li>
               <li class="codeItem "><div class="line-number">18</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">19</div><div class="code-snippet"><span class="code3">def leer_datos():</span></div></li>
-              <li class="codeItem "><div class="line-number">20</div><div class="code-snippet"><span class="code3">lista = []</span></div></li>
-              <li class="codeItem "><div class="line-number">21</div><div class="code-snippet"><span class="code3">while True:</div></li>
-              <li class="codeItem "><div class="line-number">22</div><div class="code-snippet"><span class="code3">dato = input("Ingrese un número (o 'q' para salir): ")</span></div></li>
-              <li class="codeItem "><div class="line-number">23</div><div class="code-snippet"><span class="code3">if dato == 'q':</span></div></li>
-              <li class="codeItem "><div class="line-number">24</div><div class="code-snippet"><span class="code3">break</div></li>
-              <li class="codeItem "><div class="line-number">25</div><div class="code-snippet"><span class="code3">lista.append(int(dato))</span></div></li>
-              <li class="codeItem "><div class="line-number">26</div><div class="code-snippet"><span class="code3">return lista</span></div></li>
+              <li class="codeItem "><div class="line-number">19</div><div class="code-snippet"><span class="code1">def</span> <span class="code3">leer_datos</span><span class="code4">():</span></div></li>
+              <li class="codeItem "><div class="line-number">20</div><div class="code-snippet"><span class="code4">&nbsp;lista = []</span></div></li>
+              <li class="codeItem "><div class="line-number">21</div><div class="code-snippet"><span class="code1">&nbsp;&nbsp;while True</span><span class="code4">:</span></div></li>
+              <li class="codeItem "><div class="line-number">22</div><div class="code-snippet"><span class="code3"><span class="code4">dato =</span> <span class="code5">input</span><span class="code4">(</span><span class="code2">"Ingrese un número (o 'q' para salir): "</span><span class="code4">)</span></div></li>
+              <li class="codeItem "><div class="line-number">23</div><div class="code-snippet"><span class="code1">if</span> <span class="code4">dato ==</span> <span class="code2">'q'</span><span class="code4">:</span></div></li>
+              <li class="codeItem "><div class="line-number">24</div><div class="code-snippet"><span class="code1">break</div></li>
+              <li class="codeItem "><div class="line-number">25</div><div class="code-snippet"><span class="code4">&nbsp;lista.append</span><span class="code4">(</span><span class="code5">int</span><span class="code4">(dato))</span></div></li>
+              <li class="codeItem "><div class="line-number">26</div><div class="code-snippet"><span class="code1">return</span><span class="code4"> lista</span></div></li>
               <li class="codeItem "><div class="line-number">28</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">29</div><div class="code-snippet"><span class="code3">def main():</span></div></li>
-              <li class="codeItem "><div class="line-number">30</div><div class="code-snippet"><span class="code3">datos = leer_datos()</span></div></li>
-              <li class="codeItem "><div class="line-number">31</div><div class="code-snippet"><span class="code3">suma = sumar_numeros(datos)</span></div></li>
+              <li class="codeItem "><div class="line-number">29</div><div class="code-snippet"><span class="code1">def</span> <span class="code3">main</span><span class="code4">():</span></div></li>
+              <li class="codeItem "><div class="line-number">30</div><div class="code-snippet"><span class="code4">datos = leer_datos()</span></div></li>
+              <li class="codeItem "><div class="line-number">31</div><div class="code-snippet"><span class="code4">suma = sumar_numeros(datos)</span></div></li>
               <li class="codeItem "><div class="line-number">32</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">33</div><div class="code-snippet"><span class="code3">print("La suma de los números ingresados es:", suma)</span></div></li>
-              <li class="codeItem "><div class="line-number">34</div><div class="code-snippet"><span class="code3">if __name__ == "__main__":</span></div></li>
-              <li class="codeItem "><div class="line-number">35</div><div class="code-snippet"><span class="code3">main()</div></li>
+              <li class="codeItem "><div class="line-number">33</div><div class="code-snippet"><span class="code5">print</span><span class="code4">(</span><span class="code2">"La suma de los números ingresados es:"</span><span class="code4">, suma)</span></div></li>
+              <li class="codeItem "><div class="line-number">34</div><div class="code-snippet"><span class="code1">if</span> <span class="code4">__name__ == </span><span class="code2">"__main__":</span></div></li>
+              <li class="codeItem "><div class="line-number">35</div><div class="code-snippet"><span class="code3">&nbsp;&nbsp;&nbsp;main()</div></li>
               <li class="codeItem "><div class="line-number">36</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">37</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">38</div><div class="code-snippet"></div></li>
-              <li class="codeItem "><div class="line-number">39</div><div class="code-snippet">##################### EXAMPLE CODE #####################</div></li>
-              <li class="codeItem "><div class="line-number">40</div><div class="code-snippet">########################################################</div></li>
+              <li class="codeItem "><div class="line-number">39</div><div class="code-snippet"><span class="code6">##################### EXAMPLE CODE #####################</span></div></li>
+              <li class="codeItem "><div class="line-number">40</div><div class="code-snippet"><span class="code6">########################################################</span></div></li>
               <li class="codeItem "><div class="line-number">41</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">42</div><div class="code-snippet"></div></li>
               <li class="codeItem "><div class="line-number">43</div><div class="code-snippet"></div></li>
