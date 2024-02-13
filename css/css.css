@@ -228,6 +228,15 @@ body {
 
   }
 
+  #help {
+    padding: 3px 20px;
+    background-color: transparent;
+    color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 20px;
+  }
+
 
 #mainAssistant{
     display: none;
@@ -284,11 +293,10 @@ body {
 
 .headerAssistant ul li{
     list-style: none;
-    border: 1px solid lime;
 }
 
 .chatContainer {
-    height: 84%;
+    height: 83.5%;
     position: relative;
     overflow: hidden;
     width: 100%;

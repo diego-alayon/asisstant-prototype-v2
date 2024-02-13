@@ -218,6 +218,7 @@
     var helpContainer = document.querySelector('.helpContainer');
     var chatContainer = document.querySelector('.chatContainer');
     var buttonSend = document.querySelector('.sendButton');
+    var buttonHelp = document.getElementById('help');
     
     
     
@@ -226,32 +227,31 @@
       if (mainAssistant.style.display === 'block') {
         mainAssistant.style.display = 'none';
         closeAssistant.style.display = 'none';
+        buttonHelp.style.display = 'none';
         assistant.style.background = '#6929C4';
         
         
       } else {
         mainAssistant.style.display = 'block';
         closeAssistant.style.display = 'block';
+        buttonHelp.style.display = 'block';
         assistant.style.background = '#8A3FFC';
-        
-        
       }
-      
-      
-      
-      
     }
     assistant.addEventListener('click', toggleAssistant);
     
     
+
     function contractAssistant(event) {
       mainAssistant.style.display = 'none';
       closeAssistant.style.display = 'none';
+      buttonHelp.style.display = 'none';
       event.stopPropagation(); 
     }
     closeAssistant.addEventListener('click', contractAssistant);
     
     
+
     function toggleChatContent() {
       if (helpContainer.style.display === 'block') {
         
@@ -262,20 +262,15 @@
     }
     buttonSend.addEventListener('click', toggleChatContent);
     
+
+
+
     
   });
   
+
   
   // Manejo del chat
-  function useText() {
-    var text = document.getElementById('chat').value;
-    
-    var paragraph = document.getElementById('pasteText');
-    paragraph.innerHTML += text + "<div class=&quot;thread&quot;></div>";
-    
-    document.getElementById('chat').value = '';
-    
-  }
   
   
   function useText() {
@@ -301,6 +296,25 @@
     }
   }
   
+
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const buttonHelp = document.getElementById('help');
+    const helpContainer = document.querySelector('.helpContainer');
+    const chatContainer = document.querySelector('.chatContainer');
+
+    buttonHelp.addEventListener('click', function() {
+        if (helpContainer.style.display === 'none') {
+          helpContainer.style.display = 'block';
+          chatContainer.style.display = 'none';
+
+        } else {
+          helpContainer.style.display = 'none';
+          chatContainer.style.display = 'block';
+        }
+    });
+});
   
   
   
