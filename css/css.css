@@ -276,6 +276,17 @@ body {
     border-radius: 9px 9px 0px 0px;
 }
 
+.headerAssistant ul{
+    width: 180px;
+    float: right;
+    margin-top: 6px;
+}
+
+.headerAssistant ul li{
+    list-style: none;
+    border: 1px solid lime;
+}
+
 .chatContainer {
     height: 87%;
     position: relative;
@@ -283,7 +294,6 @@ body {
 }
 
 #pasteText {
-    overflow: scroll;
     position: absolute;
     bottom: 0;
 }
