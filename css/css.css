@@ -300,6 +300,7 @@ body {
     position: relative;
     overflow: hidden;
     width: 100%;
+    top: -20px;
 }
 
 #pasteText {

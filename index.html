@@ -223,7 +223,7 @@
     
     
     function toggleAssistant() {
-      // Verifica si 'mainAssistant' está desplegado (visible)
+
       if (mainAssistant.style.display === 'block') {
         mainAssistant.style.display = 'none';
         closeAssistant.style.display = 'none';
@@ -316,6 +316,21 @@
     });
 });
   
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttonSend = document.querySelector('.sendButton')
+    const helpContainer = document.querySelector('.helpContainer');
+    const chatContainer = document.querySelector('.chatContainer');
+
+    buttonSend.addEventListener('click', function() {
+        if (helpContainer.style.display === 'block') {
+          helpContainer.style.display = 'none';
+          chatContainer.style.display = 'block';
+
+        } else {
+        }
+    });
+});
   
   
   
