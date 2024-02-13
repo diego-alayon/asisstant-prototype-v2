@@ -288,9 +288,10 @@ body {
 }
 
 .chatContainer {
-    height: 87%;
+    height: 84%;
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 #pasteText {
